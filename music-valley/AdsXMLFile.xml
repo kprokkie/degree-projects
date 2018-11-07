@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Advertisement-File-1.2">
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a1.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a2.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a9.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a4.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a8.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/a7.jpg</ImageUrl>
+    <Height>275</Height>
+    <Impressions>3</Impressions>
+    <Keyword>all</Keyword>
+    <Width>200</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner035.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner036.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner037.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner038.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner039.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner040.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>WebImages/banner041.jpg</ImageUrl>
+    <Height>60</Height>
+    <Impressions>3</Impressions>
+    <Keyword>offer</Keyword>
+    <Width>468</Width>
+  </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner042.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner043.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner044.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner045.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner046.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner047.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner048.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner049.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner050.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner051.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner052.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner053.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner054.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner055.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+    <Ad xmlns="">
+      <ImageUrl>WebImages/banner056.jpg</ImageUrl>
+      <Height>60</Height>
+      <Impressions>3</Impressions>
+      <Keyword>offer</Keyword>
+      <Width>468</Width>
+    </Ad>
+  
+</Advertisements>

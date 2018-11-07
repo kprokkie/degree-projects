@@ -1,0 +1,750 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="musicvalley.master.cs" Inherits="musicvalley" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/StyleSheet2.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/StyleSheet4.css" rel="stylesheet" type="text/css" />
+   <%-- <link href="Styles/StyleSheet3.css" rel="stylesheet" type="text/css" />--%>
+    <link href="Styles/captiontext.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <script src="Scripts/slides.min.jquery.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript"> 
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'WebImages/loading.gif',
+                play: 2000,
+                pause: 1000,
+                hoverPause: true,
+                animationStart: function () {
+                    $('.caption').animate({
+                        bottom: -35
+                    }, 100);
+                },
+                animationComplete: function (current) {
+                    $('.caption').animate({
+                        bottom: 0
+                    }, 200);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log(current);
+                    };
+                }
+            });
+        });
+	</script>
+   <script type="text/javascript">
+      
+       function abc() {
+           var a = document.getElementById('c');
+           if (a.style.display == "none") {
+               a.style.display = "block";
+               a.style.visibility = "visible";
+           }
+           else {
+
+               a.style.display = 'none';
+               a.style.visibility = 'hidden';
+
+           }
+       }
+       function abc1() {
+           var a = document.getElementById('d');
+           if (a.style.display == "none") {
+               a.style.display = "block";
+               a.style.visibility = "visible";
+           }
+           else {
+
+               a.style.display = 'none';
+               a.style.visibility = 'hidden';
+
+           }
+       }
+       function abc2() {
+           var a = document.getElementById('e');
+           if (a.style.display == "none") {
+               a.style.display = "block";
+               a.style.visibility = "visible";
+           }
+           else {
+
+               a.style.display = 'none';
+               a.style.visibility = 'hidden';
+
+           }
+       }
+     </script> 
+
+    <style type="text/css">
+        #adds
+        {
+            height: 274px;
+        }
+        .style16
+        {
+            width: 222px;
+        }
+        .style25
+        {
+            width: 544px;
+        }
+        .style27
+        {
+            color: #0000FF;
+            font-size: medium;
+            font-family: Calibri;
+        }
+        .style28
+        {
+            font-size: medium;
+            font-family: Calibri;
+        }
+        .style29
+        {
+            width: 241px;
+        }
+        #form1
+        {
+            width: 1182px;
+            margin-bottom: 0px;
+            height: 1340px;
+            margin-left: 8px;
+        }
+        #resiter
+        {
+            height: 287px;
+        }
+        .style32
+        {
+            width: 186px;
+        }
+        #register
+        {
+            height: 287px;
+            width: 243px;
+        }
+        .style39
+        {
+            width: 929px;
+        }
+        .style40
+        {
+            height: 296px;
+        }
+        .style42
+        {
+            height: 296px;
+            width: 206px;
+        }
+        .style43
+        {
+            height: 25px;
+        }
+        .style45
+        {
+        }
+        .style46
+        {
+            height: 16px;
+        }
+        .style47
+        {
+            color: #0000FF;
+            font-size: large;
+            font-family: Calibri;
+        }
+        .style48
+        {
+            color: #FF0000;
+            font-weight: normal;
+            font-family: Calibri;
+        }
+        .style49
+        {
+            color: #00FF00;
+            font-size: small;
+            font-family: Calibri;
+        }
+        .style50
+        {
+            height: 296px;
+            width: 208px;
+        }
+        .style51
+        {
+            font-size: x-large;
+            font-family: "Californian FB";
+            color: #FF0066;
+        }
+        .style52
+        {
+            font-size: x-large;
+            color: #FF0000;
+        }
+        .style53
+        {
+            color: #00FFFF;
+        }
+        .style54
+        {
+            width: 154px;
+        }
+        .style56
+        {
+            width: 163px;
+        }
+        .style57
+        {
+            width: 165px;
+        }
+        .style58
+        {
+            width: 166px;
+        }
+        .style59
+        {
+            font-size: small;
+        }
+        </style>
+</head>
+<body style="border: thin #000000 dotted; height: 1344px; margin-top: 0px; width: 1191px; margin-left: 81px; margin-right: 21px; margin-bottom: 3px;">
+  <form id="form1" runat="server">
+      <div style="border: thin #000000 dotted; height: 39px; margin-left: 64px; margin-right: 56px; margin-top: 11px; width: 1071px; margin-bottom: 0px;" 
+        id="login">
+         
+          <table style="width: 100%; height: 44px;">
+              <tr>
+                  <td class="style39">
+                      &nbsp;</td>
+                  <td>
+                      <div style="height: 34px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx" 
+                            ImageUrl="~/WebImages/login.JPG">LOGIN</asp:HyperLink>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        &nbsp;<asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" 
+                            LogoutText="LOGOUT" LogoutPageUrl="~/home.aspx" 
+                            LogoutImageUrl="~/WebImages/logout123.JPG" Height="31px" 
+                            LoginImageUrl="~/WebImages/login.JPG" LoginText="LOGOUT" Width="78px" 
+                             />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                      </div>
+                  </td>
+              </tr>
+          </table>
+        </div>
+   
+    <div style="width: 1072px; height: 54px; margin-left: 64px" id="navigation">
+        <table style="width:100%;">
+            <tr>
+                <td class="style16">
+                    <img alt="" src="WebImages/musiclogo.jpg" style="height: 42px" /><asp:Image 
+                        ID="Image1" runat="server" ImageUrl="~/WebImages/logo.jpg" />
+                </td>
+                <td class="style54" bgcolor="White">
+                    &nbsp;
+                    <img alt="" src="WebImages/Music-icon.png" /> &nbsp;&nbsp; &nbsp;<asp:LinkButton ID="LinkButton15" 
+                        runat="server" onclick="LinkButton15_Click" 
+                        
+                        style="font-weight: 700; font-family: Calibri; color: #3333FF; font-size: large">HOME</asp:LinkButton>
+                </td>
+                <td class="style58" bgcolor="White">
+                    <img alt="" src="WebImages/Music-icon.png" />&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    <asp:LinkButton ID="LinkButton16" runat="server" onclick="LinkButton16_Click" 
+                        
+                        style="font-weight: 700; font-family: Calibri; font-size: large; color: #0000FF">PRODUCT</asp:LinkButton>
+                </td>
+                <td class="style57" bgcolor="White">
+                    <img alt="" src="WebImages/Music-icon.png" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:LinkButton 
+                        ID="LinkButton18" runat="server" 
+                        
+                        
+                        style="font-weight: 700; color: #0000FF; font-family: Calibri; font-size: large" 
+                        onclick="LinkButton18_Click">SPECIALS</asp:LinkButton>
+&nbsp;</td>
+                <td class="style56" bgcolor="White">
+                    <img alt="" src="WebImages/Music-icon.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton19" runat="server" 
+                        
+                        
+                        style="font-weight: 700; color: #0000FF; font-family: Calibri; font-size: large" 
+                        onclick="LinkButton19_Click">MY CART</asp:LinkButton>
+                </td>
+                <td bgcolor="White">
+                    <img alt="" src="WebImages/Music-icon.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton20" runat="server" 
+                        
+                        
+                        style="font-weight: 700; color: #0000FF; font-size: large; font-family: Calibri" 
+                        onclick="LinkButton20_Click">ABOUT US</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;
+                    </td>
+            </tr>
+        </table>
+    </div>
+       <div style="border: thin #000000 dotted; width: 1071px; height: 47px; margin-left: 63px" 
+          id="search">
+        <table style="width: 100%; height: 42px;">
+            <tr>
+                <td class="style25">
+                    <div>
+                        <asp:TextBox ID="TextBox1" runat="server" 
+                            style="margin-left: 24px; margin-top: 0px" Width="366px"></asp:TextBox>
+&nbsp;
+                        <asp:Button ID="Button1" runat="server" BackColor="Black" BorderColor="Silver" 
+                            Font-Bold="True" Font-Names="Calibri" ForeColor="White" Height="25px" 
+                            style="margin-top: 0px" Text="SEARCH" ToolTip="SEARCH HERE" Width="80px" 
+                            onclick="Button1_Click" ValidationGroup="s" />
+                    &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="TextBox1" ErrorMessage="*" 
+                            style="color: #FF5050; font-family: Calibri; font-size: large; font-weight: 700" 
+                            ValidationGroup="s"></asp:RequiredFieldValidator>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <table style="width:100%;">
+                            <tr>
+                                <td class="style29">
+                                        &nbsp;</td>
+                                <td>
+                                    <div>
+                                        <strong>&nbsp;<asp:HyperLink ID="HyperLink9" runat="server" 
+                                            ImageUrl="~/WebImages/cart12.png" ToolTip="SHOPPING CART">HyperLink</asp:HyperLink>
+                                        <span class="style28">&nbsp;NOW, IN UR </span>
+                                        <asp:LinkButton ID="LinkButton17" runat="server" onclick="LinkButton17_Click" 
+                                            style="font-family: Calibri; color: #CC0000">CART</asp:LinkButton>
+                                        </strong>&nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                                            Font-Size="Medium" ForeColor="Blue" Text="0"></asp:Label>
+&nbsp;<span class="style27"><strong>ITEMS                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="slider" style="width: 1072px; height: 315px; margin-left: 63px">
+        <table style="width: 100%; height: 297px;">
+            <tr>
+                <td class="style50">
+                    <div style="border: thin #000000 dotted; height: 304px; text-transform: uppercase;">
+                        <table style="width: 104%; height: 308px;">
+                            <tr>
+                                <td class="style46">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style43">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="style47">
+                                    <strong>USER INFO</strong></span></td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: medium">
+&nbsp;<strong>&nbsp;&nbsp;<asp:LoginView ID="LoginView1"  runat="server" EnableViewState="false"  
+                                            >
+                                                                        <AnonymousTemplate>
+                                                                            <asp:Image ID="Image2" runat="server" Height="127px" style="margin-left: 25px; margin-top: 0px;" 
+                                                                                Width="140px" ImageUrl="~/WebImages/profile.jpg" ImageAlign="Middle" 
+                                                                                ViewStateMode="Disabled" /><br /><br />
+                                                                            &nbsp;<span class="style48"><strong>&nbsp; YOU ARE NOT LOGGED IN</strong></span><br/>&nbsp;&nbsp;  <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/login.aspx" ImageUrl="~/WebImages/login.JPG">HyperLink</asp:HyperLink>
+                                                                            <asp:HyperLink ID="HyperLink3" runat="server" ImageUrl="~/WebImages/signup.JPG" NavigateUrl="~/register.aspx">HyperLink</asp:HyperLink>
+                                                                            <br />
+                                                                            &nbsp; &nbsp; <span class="style49">&nbsp;&nbsp;&nbsp;&nbsp; I AM FEELING LUCKY !!</span>
+                                                                        </AnonymousTemplate>
+                                                                        <LoggedInTemplate>
+                                                                           
+                                                                            &nbsp;<asp:FormView ID="FormView2" runat="server" DataKeyNames="userName" 
+                                                                                DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" 
+                                                                                BorderStyle="None" BorderWidth="1px" CellPadding="4" Font-Bold="False" 
+                                                                                Font-Names="Calibri" ForeColor="#3333FF" GridLines="Horizontal" Width="161px">
+                                                                                <EditItemTemplate>
+                                                                                    userName:
+                                                                                    <asp:Label ID="userNameLabel1" runat="server" Text='<%# Eval("userName") %>' />
+                                                                                    <br />
+                                                                                    userPic:
+                                                                                    <asp:TextBox ID="userPicTextBox" runat="server" Text='<%# Bind("userPic") %>' />
+                                                                                    <br />
+                                                                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" 
+                                                                                        CommandName="Update" Text="Update" />
+                                                                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" 
+                                                                                        CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                                                                                </EditItemTemplate>
+                                                                                <EditRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                                                                                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                                                                                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                                                                                <InsertItemTemplate>
+                                                                                    userName:
+                                                                                    <asp:TextBox ID="userNameTextBox" runat="server" 
+                                                                                        Text='<%# Bind("userName") %>' />
+                                                                                    <br />
+                                                                                    userPic:
+                                                                                    <asp:TextBox ID="userPicTextBox0" runat="server" 
+                                                                                        Text='<%# Bind("userPic") %>' />
+                                                                                    <br />
+                                                                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" 
+                                                                                        CommandName="Insert" Text="Insert" />
+                                                                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" 
+                                                                                        CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                                                                                </InsertItemTemplate>
+                                                                                <ItemTemplate>
+                                                                                    <asp:Image ID="Image3" runat="server" Height="143px" 
+                                                                                        ImageUrl='<%# Eval("userPic","~/UploadImages/{0}") %>' Width="157px" />
+                                                                                    <br />
+                                                                                    <span class="style59">Welcome
+                                                                                    <asp:Label ID="userNameLabel" runat="server" style="color: #FF0000" 
+                                                                                        Text='<%# Eval("userName") %>' />
+                                                                                    <br />
+                                                                                    Enjoy Music:)ally</span>
+                                                                                    
+                                                                                    <br />
+                                                                                </ItemTemplate>
+                                                                                <EmptyDataTemplate>
+                                                                                    <asp:Image ID="Image4" runat="server" Height="143px" 
+                                                                                        ImageUrl="~/UploadImages/defaultpic.jpg" Width="144px" />
+                                                                                </EmptyDataTemplate>
+                                                                                <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                                                                            </asp:FormView>
+                                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink10" runat="server" 
+                                                                                ImageUrl="~/WebImages/editdetails.JPG" 
+                                                                                NavigateUrl="~/userinfo.aspx">HyperLink</asp:HyperLink>
+                                                                            <br />
+                                                                            &nbsp;&nbsp;&nbsp;
+                                                                            </span>
+                                                                        </LoggedInTemplate>
+                                                                    </asp:LoginView>
+                                        &nbsp;</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="style42">
+                    <div style="height: 306px">
+                        <table style="width: 101%; height: 310px;">
+                            <tr>
+                                <td class="style45">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="height: 280px">
+                    <asp:AdRotator ID="AdRotator1" runat="server" 
+                        AdvertisementFile="~/AdsXMLFile.xml" BorderColor="#0000CC" BorderStyle="Solid" 
+                        BorderWidth="2px" Height="275px" KeywordFilter="all" Width="200px" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="style40">
+                    <div style="height: 313px">
+                        <div id="container">
+                            <div id="example">
+                                <img id="ribbon" alt="New Ribbon" height="112" src="WebImages/new-ribbon.png" 
+                                    width="112" />
+                                <div id="slides">
+                                    <div class="slides_container">
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/jliba/4665625073/" target="_blank" 
+                                                title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!">
+                                            <img alt="Slide 1" height="270" src="WebImages/f1.jpg" width="570" /></a>
+                                            <div class="caption" style="bottom:0">
+                                                <p class="captiontext" align="center">
+                                                    WELCOME TO MUSIC VALLEY :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/stephangeyer/3020487807/" target="_blank" 
+                                                title="Taxi | Flickr - Photo Sharing!">
+                                            <img alt="Slide 2" height="270" src="WebImages/f2.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                  <p class="captiontext" align="center">
+                                                    ENJOY THE MUSIC WORLD :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/childofwar/2984345060/" target="_blank" 
+                                                title="Happy Bokeh raining Day | Flickr - Photo Sharing!">
+                                            <img alt="Slide 3" height="270" src="WebImages/f3.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                  <p class="captiontext" align="center">
+                                                    LIVE UR LIFE WITH MUSIC :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/b-tal/117037943/" target="_blank" 
+                                                title="We Eat Light | Flickr - Photo Sharing!">
+                                            <img alt="Slide 4" height="270" src="WebImages/f4.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                   <p class="captiontext" align="center">
+                                                    ENTERTAIN URSELF :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/bu7amd/3447416780/" target="_blank" 
+                                                title="“I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.” | Flickr - Photo Sharing!">
+                                            <img alt="Slide 5" height="270" src="WebImages/f5.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                  <p class="captiontext" align="center">
+                                                    GET EVERYTHING U NEED :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/streetpreacher/2078765853/" 
+                                                target="_blank" title="twelve.inch | Flickr - Photo Sharing!">
+                                            <img alt="Slide 6" height="270" src="WebImages/f6.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                  <p class="captiontext" align="center">
+                                                    iLIKE uLIKE vLIKE :)</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="http://www.flickr.com/photos/aftab/3152515428/" target="_blank" 
+                                                title="Save my love for loneliness | Flickr - Photo Sharing!">
+                                            <img alt="Slide 7" height="270" src="WebImages/f7.jpg" width="570" /></a>
+                                            <div class="caption">
+                                                  <p class="captiontext" align="center">
+                                                    ENJOY THE MUSIC WORLD :)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+				<%--<a href="#" class="prev"><img src="WebImages/arrow-prev.png" width="24" height="43" alt="Arrow Prev"/></a>
+				<a href="#" class="next"><img src="WebImages/arrow-next.png" width="24" height="43" alt="Arrow Next"/></a>--%>
+			                    </div>
+                                <img id="frame" alt="Example Frame" height="341" 
+                                    src="WebImages/example-frame.png" width="739" />
+                            </div>
+		<%--<div id="Div1">
+			<p>For full instructions go to <a href="http://slidesjs.com" target="_blank">http://slidesjs.com</a>.</p>
+
+			<p>Slider design by Orman Clark at <a href="http://www.premiumpixels.com/" target="_blank">Premium Pixels</a>. You can donwload the source PSD at <a href="http://www.premiumpixels.com/clean-simple-image-slider-psd/" target="_blank">Premium Pixels</a></p>
+			<p>&copy; 2010 <a href="http://nathansearles.com" target="_blank">Nathan Searles</a>. All rights reserved. Slides is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache license</a>.</p>
+		</div>--%>
+	                    </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+   <%-- slide-3--%>
+    <div style="width: 1069px; margin-left: 65px; height: 706px;" id="categorybox">
+        <table style="width: 100%; height: 703px;">
+            <tr>
+                <td class="style32">
+                    <div style="height: 695px">
+                        <table style="width: 100%; height: 699px;">
+                            <tr>
+                                <td>
+                                    <div id="genre" 
+                                        style="border: thin #808080 dotted; height: 460px; text-align: center;">
+                                        <table style="width: 100%; height: 457px; " >
+                                            <tr>
+                                                <td class="style51">
+                                                    <strong>GENRE</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                                                        style="font-weight: 700; font-family: Calibri; font-size: large" >CONTEMPORY</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
+                                                        style="font-weight: 700; font-size: large; font-family: Calibri">COUNTRY</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
+                                                        style="font-weight: 700; font-size: large; font-family: Calibri">ROCK</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+                                                        style="font-weight: 700; font-size: large; font-family: Calibri">JAZZ</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click" 
+                                                        style="font-size: large; font-family: Calibri; font-weight: 700">HIPHOP</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click" 
+                                                        style="font-family: Calibri; font-size: large; font-weight: 700">CLASSICAL</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click" 
+                                                        style="font-family: Calibri; font-size: large; font-weight: 700">RAGGAE</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton8" runat="server" onclick="LinkButton8_Click" 
+                                                        style="font-family: Calibri; font-size: large; font-weight: 700">POP</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton9" runat="server" onclick="LinkButton9_Click" 
+                                                        style="font-family: Calibri; font-size: large; font-weight: 700">DANCE</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton10" runat="server" onclick="LinkButton10_Click" 
+                                                        style="font-weight: 700; font-size: large; font-family: Calibri">GAME</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="special" 
+                                        style="border: thin #808080 dotted; height: 218px; text-align: center;">
+                                        <table style="width: 100%; height: 216px;">
+                                            <tr>
+                                                <td class="style52" style="font-family: 'Californian FB'">
+                                                    <strong>SPECIALS</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton11" runat="server" 
+                                                        style="font-weight: 700; font-size: large; font-family: Calibri">TOP RATED</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton12" runat="server" 
+                                                        style="font-size: large; font-family: Calibri; font-weight: 700">NEW RELEASES</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton13" runat="server" 
+                                                        style="font-family: Calibri; font-size: large; font-weight: 700">NOTABLE</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <asp:LinkButton ID="LinkButton14" runat="server" 
+                                                        style="font-family: Calibri; font-weight: 700; font-size: large">UPCOMING</asp:LinkButton>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div id="categorychanger" style="height: 693px">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+    <br/>
+      <div id="footerbox" 
+        
+          style="border: thin #000000 dotted; width: 1071px; height: 72px; margin-left: 63px; margin-top: 0px">
+          <table>
+              <tr>
+                  <%--<td colspan="2">
+                      &nbsp;</td>--%>
+              </tr>
+              <tr>
+                  <td>
+                      <div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:LinkButton ID="LinkButton21" runat="server" onclick="LinkButton21_Click" 
+                              style="font-weight: 700; font-family: Calibri; color: #00FFFF">Home</asp:LinkButton>
+                          &nbsp;&nbsp;
+                          <asp:LinkButton ID="LinkButton22" runat="server" onclick="LinkButton22_Click" 
+                              style="font-weight: 700; font-family: Calibri; color: #00FFFF">Products</asp:LinkButton>
+                          &nbsp;&nbsp;
+                          <asp:LinkButton ID="LinkButton23" runat="server" 
+                              style="font-weight: 700; font-family: Calibri; color: #00FFFF">Specials</asp:LinkButton>
+                          &nbsp;&nbsp;
+                          <asp:LinkButton ID="LinkButton24" runat="server" onclick="LinkButton24_Click" 
+                              style="font-weight: 700; font-family: Calibri; color: #00FFFF">About us</asp:LinkButton>
+                          &nbsp;&nbsp;
+                          </div>
+                  </td>
+                  <td rowspan="2">
+                      <div style="height: 60px">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <asp:Image ID="Image5" runat="server" 
+                              ImageUrl="~/WebImages/background_13.jpg" />
+                          <asp:AdRotator ID="AdRotator2" runat="server" Height="60px" Width="468px" 
+                              AdvertisementFile="~/AdsXMLFile.xml" KeywordFilter="offer" />
+                          <asp:Image ID="Image6" runat="server" 
+                              ImageUrl="~/WebImages/background_13r.jpg" />
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <div>
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style53">
+
+                          Copyright © 2011</span>
+                          <asp:HyperLink ID="HyperLink16" runat="server" Font-Bold="True" 
+                              Font-Names="Calibri" ForeColor="Fuchsia">MUSIC STORE</asp:HyperLink>
+                          .<span class="style53"> Powered by</span>
+                          <asp:HyperLink ID="HyperLink17" runat="server" Font-Bold="True" 
+                              Font-Names="Calibri" ForeColor="Fuchsia">ROKKIE CREATION :)</asp:HyperLink>
+&nbsp; </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                      &nbsp;</td>
+              </tr>
+          </table>
+        <br />
+    </div>
+        
+                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                                                                ConnectionString="<%$ ConnectionStrings:cns1 %>" 
+                                                                                
+                          SelectCommand="SELECT * FROM [user_Image] WHERE ([userName] = @userName)">
+                          <SelectParameters>
+                              <asp:ControlParameter ControlID="Label1" Name="userName" PropertyName="Text" 
+                                                                                        Type="String" />
+                          </SelectParameters>
+                      </asp:SqlDataSource>
+                                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Calibri" 
+                                            Font-Size="Medium" ForeColor="Blue" ToolTip="NO OF ITEMS" 
+                                        Visible="False"></asp:Label>
+        
+        </form>
+        
+</body>
+</html>
