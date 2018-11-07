@@ -1,4 +1,4 @@
-# Degree Projects
+# ![Screenshot](usict.png) Degree Projects
 
 > Music Store
 
